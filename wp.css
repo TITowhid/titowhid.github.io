@@ -19,11 +19,11 @@
 .box > nav > label{
     color: aqua;
 }
-.box > nav > .menu > a{
+.box > nav > .menu > a {
 text-decoration: none;
 padding: 10px;
 border-radius: 10px;
-color: rgb(115, 12, 175);
+color: #730caf;
 }
 .box > nav > .menu > a:hover{
 background-color: aqua;
@@ -58,8 +58,10 @@ transition: background-color 1s, color 1s;
     /* 50%{
         transform: translateY(100vh) scale(1);
     } */
-    100%{
-        transform: translateY(100vh) scale(1);
+    80%{
+        transform: translateY(79vh) scale(1);
+    }100%{
+        transform: translateY(73vh) scale(0);
     }
 }
 .wave-bottom {
@@ -76,7 +78,7 @@ transition: background-color 1s, color 1s;
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 104px;
+    height: 70px;
 }
 
 .wave-bottom .shape-fill {
@@ -95,9 +97,36 @@ transition: background-color 1s, color 1s;
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 140px;
+    height: 100px;
 }
 
 .wave-bottom-2 .shape-fill {
     fill: #f10956;
+}
+/* .arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.arrow svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 129px;
+}
+
+.arrow .shape-fill {
+    fill: aqua;
+} */
+.section-2{
+   
+    margin-top: 79vh;
+    padding: 10vh;
+    height: 100vh;
+    color: #f10956;
+    background-color: aqua;
 }
