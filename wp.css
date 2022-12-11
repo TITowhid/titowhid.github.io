@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+.box{
+    background-color:  #080018;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.box > nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 1;
+}
+.box > nav > label{
+    color: aqua;
+}
+.box > nav > .menu > a{
+text-decoration: none;
+padding: 10px;
+border-radius: 10px;
+color: rgb(115, 12, 175);
+}
+.box > nav > .menu > a:hover{
+background-color: aqua;
+color: #030022;
+transition: background-color 1s, color 1s;
+}
+.box > .ball {
+    display: flex;
+    position: relative;
+    z-index: 0;
+    flex-wrap: wrap;
+}
+.box > .ball > label {
+ position: relative;
+ width: 1em;
+ height: 1em;
+ margin: 5px;
+ background-color: aqua;
+ border-radius: 50%;
+ box-shadow: 0 0 0 5px #00ffff59,0 0 50px #00ffff,0 0 100px aqua;
+ animation: anime linear infinite;
+ animation-duration: calc(100s / var(--i));
+}
+.box > .ball > label:nth-child(even){
+    background-color: #f10956;
+    box-shadow: 0 0 0 5px #f1095659,0 0 50px #f10956,0 0 100px #f10956;
+}
+@keyframes anime {
+    0%{
+        transform: translateY(0vh) scale(0);
+    }
+    /* 50%{
+        transform: translateY(100vh) scale(1);
+    } */
+    100%{
+        transform: translateY(100vh) scale(1);
+    }
+}
+
