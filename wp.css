@@ -63,4 +63,23 @@ transition: background-color 1s, color 1s;
         transform: translateY(100vh) scale(1);
     }
 }
+.wave-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
 
+.wave-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 104px;
+}
+
+.wave-bottom .shape-fill {
+    fill: aqua;
+}
